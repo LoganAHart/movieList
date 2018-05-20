@@ -1,16 +1,13 @@
-import React, { Component} from "react";
+import React, {Component} from "react";
 import "./App.css";
 
-class MovieListEntry extends Component {
-  constructor(props) {
-    super(props);
-  }
+export class MovieListEntry extends Component {
 
   render() {
     return (
-      <div></div>
+      <div className="movie-list-entry">{this.props.movie.title}</div>
     )
   }
 }
 
-export default MovieListEntry;
+//
